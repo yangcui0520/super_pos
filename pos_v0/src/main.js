@@ -27,3 +27,9 @@ function printInventory(inputs) {
 
 
 
+
+
+
+
+
+
