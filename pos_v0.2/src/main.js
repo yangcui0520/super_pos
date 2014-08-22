@@ -10,14 +10,9 @@ function printInventory(inputs) {
             if (inputs[i] == allItems[j].barcode) {
                 new_inputs.push(allItems[j])
             }
-
-
-
         }
     }
-
-
-    for (var f = 0; f < new_inputs.length; f++) {
+ for (var f = 0; f < new_inputs.length; f++) {
         var consist_in = false;
         for (var h = 0; h < new_inputsCount.length; h++) {
             if (new_inputsCount[h].name == new_inputs[f].name) {
@@ -36,13 +31,10 @@ function printInventory(inputs) {
             item.count = 1;
             new_inputsCount.push(item);
         }
-
     }
-
-
-    var array_print = "";
+  var array_print = "";
     var total_price = 0;
-    for (var f = 0; f < new_inputsCount.length; f++) {
+      for (var f = 0; f < new_inputsCount.length; f++) {
         var print_format =
             '名称：' + new_inputsCount[f].name +
             '，数量：' + new_inputsCount[f].count + new_inputsCount[f].unit +
