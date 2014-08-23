@@ -62,7 +62,7 @@ function printInventory(inputs) {
           }
         }
     }
-    
+
     var array_print = "";
     var total_price = 0;
     for (var f = 0; f < new_inputsCount.length; f++) {
