@@ -26,7 +26,7 @@ function printInventory(inputs) {
             }
         }
     }
-    for (var f = 0; f < new_inputs.length; f++) {               //合并重复列出的同种类商品信息；将带有count信息的商品信息块放进new_inputsCount。
+    for (var f = 0; f < new_inputs.length; f++) {                  //合并重复列出的同种类商品信息；将带有count信息的商品信息块放进new_inputsCount。
         var consist_in = false;
         for (var h = 0; h < new_inputsCount.length; h++) {
             if (new_inputsCount[h].name == new_inputs[f].name) {
@@ -94,10 +94,7 @@ function printInventory(inputs) {
                 promotionTest=promotionTest+promotionBody;
            }
      }
-
-
-
-      var expectText =
+     var expectText =
         '***<没钱赚商店>购物清单***\n' +
         array_print +
         '----------------------\n' +
@@ -106,29 +103,9 @@ function printInventory(inputs) {
         '总计：' + total_price.toFixed(2) + '(元)\n' +
             '节省：'+ saving_money.toFixed(2) +  '(元)\n' +
         '**********************';
-    console.info(expectText);
-    console.log(expectText);
+       console.info(expectText);
+       console.log(expectText);
 }
-
-/*'挥泪赠送商品：\n' +
-'名称：雪碧，数量：1瓶\n' +
-'名称：方便面，数量：1袋\n' +
-'----------------------\n' +
-'总计：51.00(元)\n' +
-'节省：7.50(元)\n' +
-function loadPromotions() {
-return [
-    {
-        type: 'BUY_TWO_GET_ONE_FREE',
-        barcodes: [
-            'ITEM000000',
-            'ITEM000001',
-            'ITEM000005'
-        ]
-    }
-]
-}
-*/
 function get_normal_barcode_array(inputs) {
     for (i = 0; i < inputs.length; i++) {
         var num = inputs[i].search("-");
